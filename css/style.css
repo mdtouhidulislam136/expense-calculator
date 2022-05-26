@@ -1,0 +1,136 @@
+/* header design */
+h1{
+    text-align:center;
+    color:rgb(56, 128, 128);
+}
+
+
+/* image height and width fixed */
+img{
+    height: 300px;
+    width: 400px;
+}
+
+
+/* img class, img taking half of the page space and margin top 50px */
+.img{
+    margin-top: 50px;
+    width: 50%;
+}
+
+/* in html, item used as a container. main item display and margin-left fixed  */
+
+.item{
+    margin-left: 50px;
+    display:flex;
+}
+
+/* title of income and expences */
+
+h3{
+    margin-left: 80px;
+}
+
+/* whole calculation area designing here */
+.expense-calculator{
+    width: 50%;
+    margin-top: 50px;
+    box-shadow: 1px 1px 5px 5px whitesmoke;
+    background-color: rgb(168, 206, 240);
+    margin-right: 100px;
+    margin-left: 100px;
+    text-align:center;
+}
+
+
+/* all expence input area fixing */
+.food-area{
+    margin-left: 15px ;
+}
+
+.rent-area{
+    margin-left: 18px;
+}
+
+
+.calculate-button{
+    margin-left: 80px;
+    
+}
+
+/* two button designing using class */
+.button-design{
+    background-color:rgb(224, 74, 48);
+    color: white;
+    border-radius: 6px;
+
+
+}
+
+/* below the calculator button all midle text desing using one amount-text class */
+.amount-text{
+    font-weight: bold;
+    margin-left: 60px;
+
+}
+
+.notify{
+    display:none;
+
+}
+
+
+
+/* only for mobile view */
+@media only screen and (max-width:688px)  {
+
+
+    .item{
+        width: 100%;
+        flex-direction: column;
+        margin-left: 0px;
+      
+    }
+    .amount-text{
+        font-weight: bold;
+        margin-left: 10px;
+    
+    }
+
+    .food-area{
+        margin-left: 0px ;
+    }
+    
+    .rent-area{
+        margin-left: 0px;
+    }
+    
+    
+    .button{
+        margin-left: 10px;
+    }
+    
+    h3{
+        margin-left: 10px;
+    }
+   
+    .expense-calculator{
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 100%;
+    }
+
+    img{
+        width: 300px;
+
+    }
+
+    .img{
+        width:100%;
+    }
+
+    h1{
+        text-align:left;
+        color:aqua;
+    }
+  }

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money master</title>
+    <!-- css file added here -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <!-- website heading -->
+   <header> <h1>Monthly income and expense calculator</h1></header>
+   <main>
+       <!-- Started structure developing -->
+
+       <div class="item">
+           <!-- img added -->
+           <div class="img">
+               <img src="image/expense.jpg" alt="" srcset="">
+           </div>
+        
+            
+           <!-- calculation part started here -->
+            <div class="expense-calculator">
+                <div class="calculator-item">
+                    <!-- income title added using h3 tag -->
+                    <h3>Income</h3>
+
+                    <!-- income input area -->
+                <div>
+                    <label>Income:</label>
+                    <input id="income" type="text">
+                </div>
+                <div class="income-section">
+                    <p id="incomeInput-fail" class="notify">❌ your input is invalid, Please try again with positive number</p>
+                </div>
+    
+                 <!-- expense title added using h3 tag -->
+                    <h3>Expences</h3>
+
+                     <!-- food expense  input area -->
+                    <div class="food-area">
+                        <label>Food:</label>
+                        <input id="food" type="text">
+                    </div>
+                    <br>
+
+                    <!-- rent expense  input area-->
+                    <div class="rent-area">
+                        <label>Rent:</label>
+                        <input id="rent" type="text">
+                    </div>
+                    <br>
+                    <!-- clothes expense  input area -->
+                    <div>
+                        <label class="clothe-area">Clothes:</label>
+                        <input id="clothes" type="text">
+                    </div>
+                        <br>
+                         <!-- expense calculation button -->
+                    <div class="calculate-button">
+                        <button class="button-design" id="calculator">Calculate</button>
+                    </div>
+
+                    <div class="notify-section">
+                        <p id="notify-fail" class="notify">❌ your input is invalid, Please try again with positive number</p>
+                    </div>
+                    <br>
+
+                    <!-- total calculated expence area -->
+                    <div class="amount-text">Total Expences: <span id="total-expence">0000</span></div>
+                    <br>
+                    <!-- balance after expense -->
+                    <div class="amount-text">Balance: <span id="balance">0000</span></div>
+                    <br>
+                    <!-- savings input and save button -->
+                    <div>save: <input id="savings" type="text">  <span>% <button class="button-design" id="save">Save</button></span></div> 
+                    <br>
+                    <!-- saving amount -->
+                    <div class="amount-text">Saving Amount: <span id="savings-amount">0000</span></div>
+                    <br>
+                    <!-- remaining amount of balance -->
+                    <div class="amount-text">Remaining Balance: <span id="remaining-balance">0000</span></div>
+
+            </div>
+
+            <!-- calculation part ended here -->
+           
+                </div>
+
+                
+        
+       </div>
+   </main>
+
+   <!-- js file added here -->
+    <script src="js/script.js"></script>
+</body>
+</html>
